@@ -1,0 +1,137 @@
+.page-header {
+  max-width: 1280px;
+  margin: 0 auto 25px;
+}
+
+@media (max-width: 360px) {
+  .page-header {
+    margin: 0 auto 0;
+  }
+}
+
+.page-header__button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 13px 0px 27px;
+  margin-bottom: 29px;
+}
+
+.page-header__mobile-title {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .page-header__button-container {
+    display: grid;
+    grid-template-columns: 102px 156px 22px;
+    grid-gap: 0;
+    margin: 0;
+    padding: 23px 20px 0.5px;
+  }
+
+  .page-header__mobile-title {
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
+.page-header__container.container {
+  max-width: 1200px;
+  margin: 0 0 0 67px;
+}
+
+@media (max-width: 360px) {
+  .page-header__container.container {
+    display: none;
+  }
+}
+
+.page-header__scroll-button {
+  position: relative;
+  margin-top: 15px;
+  width: 18px;
+  height: 12px;
+  background-color: #757575;
+  border: none;
+}
+
+.page-header__scroll-button::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 3px;
+  background-color: #fff;
+  top: 2px;
+  left: 0;
+}
+
+.page-header__scroll-button::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 3px;
+  background-color: #fff;
+  top: 7px;
+  left: 0;
+}
+
+.page-header__plan-button {
+  position: relative;
+  width: 161px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #1071ff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 360px)  {
+  .page-header__plan-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-header__plan-button span {
+    display: none;
+    width: 61px;
+  }
+}
+
+.page-header__plan-button:before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 8px;
+  width: 11px;
+  height: 11px;
+  background-image: url('../../../assets/images/plus-icon.svg');
+  background-repeat: no-repeat;
+}
+
+.page-header__breadcrumbs {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.page-header__page-title {
+  position: relative;
+  margin-top: 16px;
+  padding-left: 48px;
+  font-size: 38px;
+}
+
+.page-header__page-title:before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../assets/images/progress-union.svg');
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 2px;
+}

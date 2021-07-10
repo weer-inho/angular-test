@@ -1,0 +1,124 @@
+<main class="page-main">
+  <div class="page-main__tabs">
+    <button class="page-main__tab page-main__tab--active">Групповое</button>
+    <button class="page-main__tab">Индивидуальное</button>
+  </div>
+  <div class="page-main__filters">
+    <form class="page-main__filter-form" action="#">
+      <input class="page-main__search-input" type="search" placeholder="Поиск">
+
+      <div class="page-main__select">
+        <h3 class="page-main__select-title">Программа</h3>
+        <select id="programm-select">
+          <option value="1">Все</option>
+          <option value="2">Некоторые</option>
+        </select>
+      </div>
+
+      <div class="page-main__select">
+        <h3 class="page-main__select-title">Период</h3>
+        <select id="period-select">
+          <option value="1">Июнь 2019</option>
+          <option value="1">Июнь 2020</option>
+        </select>
+      </div>
+
+      <div class="page-main__select">
+        <h3 class="page-main__select-title">Статус</h3>
+        <select id="status-select">
+          <option value="1">Все</option>
+          <option value="2">Некоторые</option>
+        </select>
+      </div>
+
+      <div class="page-main__select page-main__select--mobile">
+        <h3 class="page-main__select-title">Сортировка</h3>
+        <select id="status-select">
+          <option value="1">По прогрессу обучения</option>
+          <option value="2">По дате</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="page-main__filters-footer">
+      <p class="page-main__sessions">34 сессии</p>
+      <button class="page-main__setup-filter">Настроить фильтр</button>
+      <button class="page-main__clean-filter">Сбросить</button>
+    </div>
+  </div>
+
+  <div class="page-main__list">
+    <table class="page-main__list-table">
+      <tbody>
+        <tr class="page-main__main-row">
+          <th class="page-main__date-column">Дата начала</th>
+          <th class="page-main__title-column">Название</th>
+          <th class="page-main__count-column"><span class="page-main__count-text">Участников</span><span class="page-main__count-text page-main__count-text--mobile">Уч.</span></th>
+          <th class="page-main__couch-column">Тренер</th>
+          <th class="page-main__progress-column">Прогресс</th>
+          <th class="page-main__menu-column"></th>
+        </tr>
+        <tr>
+          <td>23 дек, 9:00</td>
+          <td class="page-main__text-cell">Страхование с заботой о клиенте</td>
+          <td>12</td>
+          <td></td>
+          <td class="page-main__percent-cell">95 %</td>
+          <td>
+            <button class="page-main__menu-button"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>14 ноя, 9:30</td>
+          <td class="page-main__text-cell">Главные правила продаж</td>
+          <td>10</td>
+          <td></td>
+          <td class="page-main__percent-cell">91 %</td>
+          <td>
+            <button class="page-main__menu-button"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>19 окт, 14:30</td>
+          <td class="page-main__text-cell">Первичное обучение КС</td>
+          <td>8</td>
+          <td></td>
+          <td class="page-main__percent-cell">86 %</td>
+          <td>
+            <button class="page-main__menu-button"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>10 окт, 16:00</td>
+          <td class="page-main__text-cell">Вторичное обучение КС</td>
+          <td>18</td>
+          <td></td>
+          <td class="page-main__percent-cell">82 %</td>
+          <td>
+            <button class="page-main__menu-button"></button>
+          </td>
+        </tr>
+        <tr class="page-main__inactive-row">
+          <td>5 окт, 15:00</td>
+          <td class="page-main__text-cell">Вклады: теория и практика</td>
+          <td>6</td>
+          <td></td>
+          <td class="page-main__percent-cell">79 %</td>
+          <td>
+            <button class="page-main__menu-button"></button>
+          </td>
+        </tr>
+        <tr class="page-main__inactive-row">
+          <td>27 сен, 11:00</td>
+          <td class="page-main__text-cell">Очное обучение менеджеров</td>
+          <td>20</td>
+          <td></td>
+          <td class="page-main__percent-cell">73 %</td>
+          <td>
+            <button class="page-main__menu-button"></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
