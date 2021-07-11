@@ -18,9 +18,13 @@
 
 @media (max-width: 360px) {
   .page-main {
-    width: 320;
+    // width: 350px;
     padding: 0 17px;
     grid-template-rows: 59px 139px 256px;
+  }
+
+  .page-main__tabs {
+    width: 340px;
   }
 }
 

@@ -1,0 +1,239 @@
+.page-planning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  color: #fff;
+  min-height: 100vh;
+  width: 856px;
+  padding: 20px;
+  line-height: 1.5;
+  transform: translateX(856px);
+  transition: transform 1s ease-in-out;
+}
+
+.page-planning__planning {
+  margin: 0 0 30px 0;
+}
+
+.page-planning.show {
+  transform: translateX(0);
+}
+
+@media (max-width: 360px) {
+  .page-planning {
+    display: none;
+  }
+}
+
+.page-planning__title {
+  font-size: 18px;
+  margin: 17px 0 19px 3px;
+  color: #000;
+}
+
+.page-planning__buttons-container {
+  height: 36px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0 0 2px;
+  margin: 0 0 0 0;
+}
+
+.page-planning__button {
+  position: relative;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  margin-right: 26px;
+  font-size: 12px;
+  color: #757575;
+}
+
+.page-planning__button--active:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: #1071ff;
+  border-radius: 1px;
+  height: 2px;
+  width: 100%;
+}
+
+.page-planning__select {
+  position: relative;
+  display: inline;
+  height: 40px;
+  padding: 0 0 0 0;
+  margin: 0 31px 0 0;
+}
+
+.page-planning__select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -817px;
+  top: 23px;
+  width: 11px;
+  height: 7px;
+  background-image: url('../../../assets/images/arrow-icon.svg');
+  background-repeat: no-repeat;
+}
+
+.page-planning__select:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 17px;
+  left: 3px;
+  width: 818px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.page-planning__select select {
+  width: 100%;
+  font-size: 12.2px;
+  height: 15px;
+  -webkit-appearance: none;
+  margin-left: -1px;
+  background-color: none;
+  border: none;
+  margin: 0 0 0 3px;
+  padding: 0 0 0 0;
+}
+
+.page-planning__select-title {
+  font-size: 10px;
+  color: #757575;
+  font-weight: 400;
+  color: #000;
+  margin: 2px 0 -2px 3px;
+}
+
+.page-planning__meeting {
+  padding: 31px 0 0 3px;
+  color: #000;
+}
+
+.page-planning__meeting-title {
+  font-size: 14px;
+  margin: 0 0 0 0;
+  color: #000;
+}
+
+.page-planning__meeting-container {
+  display: grid;
+  grid-template-rows: 74px 66px;
+  grid-row-gap: 23px;
+  grid-template-columns: 275px 275px 275px;
+}
+
+.page-planning__meet-wrapper {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.page-planning__meet-wrapper {
+  display: grid;
+  grid-template-rows: 23px 1fr;
+}
+
+.page-planning__meet-input {
+  font-size: 11.9px;
+  border: none;
+}
+
+.page-planning__meet-label {
+  position: relative;
+  margin: 23px 0 0 0;
+  font-size: 10px;
+}
+
+.page-planning__meet-label:after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 818px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.page-planning__input-title {
+  font-size: 10px;
+  color: #757575;
+  font-weight: 400;
+  margin: 0 0 -3px 0;
+}
+
+.page-planning__date-wrapper {
+  position: relative;
+  margin: 0 0 0 82px;
+}
+
+.page-planning__date-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -32px;
+  width: 15px;
+  height: 15px;
+  background-image:
+    url('../../../assets/images/date-icon.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.page-planning__date-wrapper:after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: -33px;
+  width: 240px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.page-planning__date-input {
+  font-size: 12px;
+  margin: 0 0 0 0;
+  border: none;
+  z-index: 999;
+}
+
+.page-planning__time-wrapper {
+  position: relative;
+  margin: 0 0 0 69px;
+}
+
+.page-planning__time-input {
+  font-size: 11.9px;
+  border: none;
+}
+
+.page-planning__time-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -32px;
+  width: 15px;
+  height: 15px;
+  background-image:
+    url('../../../assets/images/date-icon.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.page-planning__time-wrapper:after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: -33px;
+  width: 240px;
+  height: 1px;
+  background-color: #ebebeb;
+}

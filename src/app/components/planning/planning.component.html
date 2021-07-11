@@ -1,0 +1,120 @@
+<div class="page-planning">
+
+  <div class="page-planning__planning">
+    <h3 class="page-planning__title">Планирование</h3>
+
+    <div class="page-planning__buttons-container">
+      <button class="page-planning__button page-planning__button--active">Основное</button>
+      <button class="page-planning__button">Участники</button>
+    </div>
+  </div>
+
+  <div class="page-planning__basic">
+    <div class="page-planning__select">
+      <h3 class="page-planning__select-title">Программа</h3>
+      <select>
+        <option value="1">Страхование с заботой о клиенте</option>
+        <option value="1">Страхование с заботой о предпринимателе</option>
+      </select>
+    </div>
+
+    <div class="page-planning__meeting">
+      <h3 class="page-planning__meeting-title">Мероприятие, дата и время проведения</h3>
+
+      <div class="page-planning__meeting-container">
+          <div class="page-planning__meet-wrapper">
+            <label for="meet" class="page-planning__meet-label">Мероприятие</label>
+            <input class="page-planning__meet-input" id="meet" type="text" placeholder="Главные правила продаж Треннинг">
+          </div>
+
+          <div class="page-planning__date-wrapper">
+            <h3 class="page-planning__input-title">Дата</h3>
+            <input class="page-planning__date-input" type="text" placeholder="28 Ноября">
+          </div>
+
+          <div class="page-planning__time-wrapper">
+            <h3 class="page-planning__input-title">Время</h3>
+            <input class="page-planning__time-input" type="text" placeholder="9:00">
+          </div>
+
+          <div class="page-planning__coach-wrapper">
+            <h3 class="page-planning__input-title">Тренер</h3>
+            <select>
+              <option value="1">Сергей Ефремов</option>
+              <option value="2">Ефрем Сергеев</option>
+            </select>
+          </div>
+        </div>
+
+      <div class="page-planning__meeting-container">
+        <input class="page-planning__meet-input" id="meet" type="text" placeholder="Страхование без потерь">
+        <label for="meet" class="page-planning__meet-label">Мероприятие</label>
+
+          <div class="page-planning__input">
+            <h3 class="page-planning__input-title">Дата</h3>
+            <input class="page-planning__date-input" type="date">
+          </div>
+
+          <div class="page-planning__input">
+            <h3 class="page-planning__input-title">Время</h3>
+            <input class="page-planning__date-input" type="time">
+          </div>
+
+          <div class="page-planning__input">
+            <h3 class="page-planning__input-title">Тренер</h3>
+            <select>
+              <option value="1">Сергей Ефремов</option>
+              <option value="2">Ефрем Сергеев</option>
+            </select>
+          </div>
+        </div>
+
+      <div class="page-planning__meeting-container">
+        <input class="page-planning__meet-input" id="meet" type="text" placeholder="Страховой случай или как помочь клиенту">
+        <label for="meet" class="page-planning__meet-label">Мероприятие</label>
+
+          <div class="page-planning__input">
+            <h3 class="page-planning__input-title">Дата</h3>
+            <input class="page-planning__date-input" type="date">
+          </div>
+
+          <div class="page-planning__input">
+            <h3 class="page-planning__input-title">Время</h3>
+            <input class="page-planning__date-input" type="time">
+          </div>
+
+          <div class="page-planning__input">
+            <h3 class="page-planning__input-title">Тренер</h3>
+            <select>
+              <option value="1">Тренер</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="page-planning__conditions">
+            <fieldset class="filter__type">
+              <legend class="filter__title">Условия записи по коду</legend>
+              <ul>
+                <li>
+                  <input class="visually-hidden" type="radio" name="radio-check"  value="shaving" id="radio1">
+                  <label class="filter__radio" for="radio1">Не использовать код доступа</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="radio" name="radio-check" value="care-products" id="radio2">
+                  <label class="filter__radio" for="radio2">Требовать регистрацию</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="radio" name="radio-check" value="accessories" id="radio3">
+                  <label class="filter__radio" for="radio3">Запросить только имя и фамилию</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="radio" name="radio-check" value="accessories" id="radio4">
+                  <label class="filter__radio" for="radio4">Не требовать регистрацию, имя и фамилию</label>
+                </li>
+              </ul>
+            </fieldset>
+        </div>
+    </div>
+  </div>
+
+</div>
